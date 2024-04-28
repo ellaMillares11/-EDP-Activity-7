@@ -16,5 +16,10 @@ namespace Internet_Billing_System
         {
             InitializeComponent();
         }
+
+        private void panel5_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }
