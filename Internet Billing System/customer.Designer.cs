@@ -1,6 +1,6 @@
 ﻿namespace Internet_Billing_System
 {
-    partial class subscriptionForm
+    partial class customer
     {
         /// <summary>
         /// Required designer variable.
@@ -28,14 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(subscriptionForm));
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.acc_btn = new System.Windows.Forms.Button();
-            this.btnNav = new System.Windows.Forms.Button();
-            this.label2 = new System.Windows.Forms.Label();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.label9 = new System.Windows.Forms.Label();
-            this.panel2 = new System.Windows.Forms.Panel();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(customer));
             this.pictureBox16 = new System.Windows.Forms.PictureBox();
             this.pictureBox17 = new System.Windows.Forms.PictureBox();
             this.button7 = new System.Windows.Forms.Button();
@@ -50,19 +43,19 @@
             this.btnAdmin = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.button2 = new System.Windows.Forms.Button();
+            this.btnNav = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.acc_btn = new System.Windows.Forms.Button();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.label9 = new System.Windows.Forms.Label();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.label2 = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.panel5 = new System.Windows.Forms.Panel();
-            this.clearSrchBtn = new System.Windows.Forms.Button();
-            this.searchbtn = new System.Windows.Forms.Button();
-            this.searchBills = new System.Windows.Forms.ComboBox();
-            this.panel1.SuspendLayout();
-            this.panel4.SuspendLayout();
-            this.panel2.SuspendLayout();
+            this.panel1 = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox16)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox17)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
@@ -71,108 +64,13 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.panel3.SuspendLayout();
+            this.panel2.SuspendLayout();
+            this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            this.panel5.SuspendLayout();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // panel1
-            // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(78)))), ((int)(((byte)(137)))));
-            this.panel1.Controls.Add(this.acc_btn);
-            this.panel1.Controls.Add(this.btnNav);
-            this.panel1.Controls.Add(this.label2);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1165, 68);
-            this.panel1.TabIndex = 3;
-            // 
-            // acc_btn
-            // 
-            this.acc_btn.BackColor = System.Drawing.Color.Transparent;
-            this.acc_btn.BackgroundImage = global::Internet_Billing_System.Properties.Resources.account__2_;
-            this.acc_btn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.acc_btn.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(78)))), ((int)(((byte)(137)))));
-            this.acc_btn.FlatAppearance.BorderSize = 0;
-            this.acc_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.acc_btn.ForeColor = System.Drawing.Color.Transparent;
-            this.acc_btn.Location = new System.Drawing.Point(1085, 11);
-            this.acc_btn.Name = "acc_btn";
-            this.acc_btn.Size = new System.Drawing.Size(50, 50);
-            this.acc_btn.TabIndex = 3;
-            this.acc_btn.UseVisualStyleBackColor = false;
-            // 
-            // btnNav
-            // 
-            this.btnNav.BackColor = System.Drawing.Color.Transparent;
-            this.btnNav.BackgroundImage = global::Internet_Billing_System.Properties.Resources.menu;
-            this.btnNav.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnNav.FlatAppearance.BorderSize = 0;
-            this.btnNav.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnNav.Location = new System.Drawing.Point(289, 11);
-            this.btnNav.Name = "btnNav";
-            this.btnNav.Size = new System.Drawing.Size(50, 50);
-            this.btnNav.TabIndex = 1;
-            this.btnNav.UseVisualStyleBackColor = false;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(27, 25);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(256, 32);
-            this.label2.TabIndex = 0;
-            this.label2.Text = "Admin Dashboard";
-            // 
-            // panel4
-            // 
-            this.panel4.BackColor = System.Drawing.Color.White;
-            this.panel4.Controls.Add(this.label9);
-            this.panel4.Location = new System.Drawing.Point(0, 68);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(1165, 60);
-            this.panel4.TabIndex = 5;
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(306, 16);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(206, 37);
-            this.label9.TabIndex = 0;
-            this.label9.Text = "Subscription";
-            // 
-            // panel2
-            // 
-            this.panel2.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(42)))), ((int)(((byte)(53)))));
-            this.panel2.Controls.Add(this.pictureBox16);
-            this.panel2.Controls.Add(this.pictureBox17);
-            this.panel2.Controls.Add(this.button7);
-            this.panel2.Controls.Add(this.button8);
-            this.panel2.Controls.Add(this.pictureBox7);
-            this.panel2.Controls.Add(this.pictureBox6);
-            this.panel2.Controls.Add(this.pictureBox5);
-            this.panel2.Controls.Add(this.pictureBox4);
-            this.panel2.Controls.Add(this.pictureBox3);
-            this.panel2.Controls.Add(this.pictureBox2);
-            this.panel2.Controls.Add(this.button6);
-            this.panel2.Controls.Add(this.btnAdmin);
-            this.panel2.Controls.Add(this.button4);
-            this.panel2.Controls.Add(this.button3);
-            this.panel2.Controls.Add(this.button2);
-            this.panel2.Controls.Add(this.button1);
-            this.panel2.Controls.Add(this.panel3);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel2.Location = new System.Drawing.Point(0, 68);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(289, 624);
-            this.panel2.TabIndex = 4;
             // 
             // pictureBox16
             // 
@@ -344,6 +242,31 @@
             this.button3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button3.UseVisualStyleBackColor = false;
             // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.Transparent;
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.Color.White;
+            this.button1.Location = new System.Drawing.Point(92, 132);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(184, 49);
+            this.button1.TabIndex = 3;
+            this.button1.Text = "Dashboard";
+            this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button1.UseVisualStyleBackColor = false;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::Internet_Billing_System.Properties.Resources.web__1_;
+            this.pictureBox1.Location = new System.Drawing.Point(14, 23);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(66, 68);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 1;
+            this.pictureBox1.TabStop = false;
+            // 
             // button2
             // 
             this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(42)))), ((int)(((byte)(53)))));
@@ -359,20 +282,18 @@
             this.button2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button2.UseVisualStyleBackColor = false;
             // 
-            // button1
+            // btnNav
             // 
-            this.button1.BackColor = System.Drawing.Color.Transparent;
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(92, 132);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(184, 49);
-            this.button1.TabIndex = 3;
-            this.button1.Text = "Dashboard";
-            this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button1.UseVisualStyleBackColor = false;
+            this.btnNav.BackColor = System.Drawing.Color.Transparent;
+            this.btnNav.BackgroundImage = global::Internet_Billing_System.Properties.Resources.menu;
+            this.btnNav.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnNav.FlatAppearance.BorderSize = 0;
+            this.btnNav.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnNav.Location = new System.Drawing.Point(289, 11);
+            this.btnNav.Name = "btnNav";
+            this.btnNav.Size = new System.Drawing.Size(50, 50);
+            this.btnNav.TabIndex = 1;
+            this.btnNav.UseVisualStyleBackColor = false;
             // 
             // panel3
             // 
@@ -395,91 +316,114 @@
             this.label1.Text = "Internet Billing\r\n System";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // pictureBox1
+            // acc_btn
             // 
-            this.pictureBox1.Image = global::Internet_Billing_System.Properties.Resources.web__1_;
-            this.pictureBox1.Location = new System.Drawing.Point(14, 23);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(66, 68);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 1;
-            this.pictureBox1.TabStop = false;
+            this.acc_btn.BackColor = System.Drawing.Color.Transparent;
+            this.acc_btn.BackgroundImage = global::Internet_Billing_System.Properties.Resources.account__2_;
+            this.acc_btn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.acc_btn.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(78)))), ((int)(((byte)(137)))));
+            this.acc_btn.FlatAppearance.BorderSize = 0;
+            this.acc_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.acc_btn.ForeColor = System.Drawing.Color.Transparent;
+            this.acc_btn.Location = new System.Drawing.Point(1085, 11);
+            this.acc_btn.Name = "acc_btn";
+            this.acc_btn.Size = new System.Drawing.Size(50, 50);
+            this.acc_btn.TabIndex = 3;
+            this.acc_btn.UseVisualStyleBackColor = false;
+            // 
+            // panel2
+            // 
+            this.panel2.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(42)))), ((int)(((byte)(53)))));
+            this.panel2.Controls.Add(this.pictureBox16);
+            this.panel2.Controls.Add(this.pictureBox17);
+            this.panel2.Controls.Add(this.button7);
+            this.panel2.Controls.Add(this.button8);
+            this.panel2.Controls.Add(this.pictureBox7);
+            this.panel2.Controls.Add(this.pictureBox6);
+            this.panel2.Controls.Add(this.pictureBox5);
+            this.panel2.Controls.Add(this.pictureBox4);
+            this.panel2.Controls.Add(this.pictureBox3);
+            this.panel2.Controls.Add(this.pictureBox2);
+            this.panel2.Controls.Add(this.button6);
+            this.panel2.Controls.Add(this.btnAdmin);
+            this.panel2.Controls.Add(this.button4);
+            this.panel2.Controls.Add(this.button3);
+            this.panel2.Controls.Add(this.button2);
+            this.panel2.Controls.Add(this.button1);
+            this.panel2.Controls.Add(this.panel3);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel2.Location = new System.Drawing.Point(0, 68);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(289, 624);
+            this.panel2.TabIndex = 8;
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Location = new System.Drawing.Point(306, 16);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(164, 37);
+            this.label9.TabIndex = 0;
+            this.label9.Text = "Customer";
+            // 
+            // panel4
+            // 
+            this.panel4.BackColor = System.Drawing.Color.White;
+            this.panel4.Controls.Add(this.label9);
+            this.panel4.Location = new System.Drawing.Point(0, 68);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(1165, 60);
+            this.panel4.TabIndex = 9;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.White;
+            this.label2.Location = new System.Drawing.Point(27, 25);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(256, 32);
+            this.label2.TabIndex = 0;
+            this.label2.Text = "Admin Dashboard";
             // 
             // dataGridView1
             // 
             this.dataGridView1.BackgroundColor = System.Drawing.Color.Silver;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(23, 76);
+            this.dataGridView1.Location = new System.Drawing.Point(313, 157);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 62;
             this.dataGridView1.RowTemplate.Height = 28;
-            this.dataGridView1.Size = new System.Drawing.Size(784, 258);
-            this.dataGridView1.TabIndex = 6;
+            this.dataGridView1.Size = new System.Drawing.Size(831, 418);
+            this.dataGridView1.TabIndex = 10;
             // 
-            // panel5
+            // panel1
             // 
-            this.panel5.BackColor = System.Drawing.Color.White;
-            this.panel5.Controls.Add(this.clearSrchBtn);
-            this.panel5.Controls.Add(this.searchbtn);
-            this.panel5.Controls.Add(this.searchBills);
-            this.panel5.Controls.Add(this.dataGridView1);
-            this.panel5.Location = new System.Drawing.Point(313, 150);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(830, 501);
-            this.panel5.TabIndex = 7;
-            this.panel5.Paint += new System.Windows.Forms.PaintEventHandler(this.panel5_Paint);
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(78)))), ((int)(((byte)(137)))));
+            this.panel1.Controls.Add(this.acc_btn);
+            this.panel1.Controls.Add(this.btnNav);
+            this.panel1.Controls.Add(this.label2);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(1165, 68);
+            this.panel1.TabIndex = 7;
             // 
-            // clearSrchBtn
-            // 
-            this.clearSrchBtn.BackColor = System.Drawing.Color.White;
-            this.clearSrchBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.clearSrchBtn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(178)))), ((int)(((byte)(202)))));
-            this.clearSrchBtn.Location = new System.Drawing.Point(735, 25);
-            this.clearSrchBtn.Name = "clearSrchBtn";
-            this.clearSrchBtn.Size = new System.Drawing.Size(87, 34);
-            this.clearSrchBtn.TabIndex = 13;
-            this.clearSrchBtn.Text = "Clear";
-            this.clearSrchBtn.UseVisualStyleBackColor = false;
-            // 
-            // searchbtn
-            // 
-            this.searchbtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(178)))), ((int)(((byte)(202)))));
-            this.searchbtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.searchbtn.ForeColor = System.Drawing.Color.White;
-            this.searchbtn.Location = new System.Drawing.Point(634, 25);
-            this.searchbtn.Name = "searchbtn";
-            this.searchbtn.Size = new System.Drawing.Size(95, 34);
-            this.searchbtn.TabIndex = 12;
-            this.searchbtn.Text = "Search";
-            this.searchbtn.UseVisualStyleBackColor = false;
-            // 
-            // searchBills
-            // 
-            this.searchBills.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.searchBills.FormattingEnabled = true;
-            this.searchBills.Location = new System.Drawing.Point(27, 26);
-            this.searchBills.Name = "searchBills";
-            this.searchBills.Size = new System.Drawing.Size(601, 33);
-            this.searchBills.TabIndex = 11;
-            // 
-            // subscriptionForm
+            // customer
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Inherit;
             this.ClientSize = new System.Drawing.Size(1165, 692);
             this.Controls.Add(this.panel2);
-            this.Controls.Add(this.panel1);
             this.Controls.Add(this.panel4);
-            this.Controls.Add(this.panel5);
+            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.panel1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
-            this.Name = "subscriptionForm";
+            this.Name = "customer";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Subscription";
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
-            this.panel4.ResumeLayout(false);
-            this.panel4.PerformLayout();
-            this.panel2.ResumeLayout(false);
+            this.Text = "customer";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox16)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox17)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
@@ -488,23 +432,20 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            this.panel3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.panel3.ResumeLayout(false);
+            this.panel2.ResumeLayout(false);
+            this.panel4.ResumeLayout(false);
+            this.panel4.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            this.panel5.ResumeLayout(false);
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Button acc_btn;
-        private System.Windows.Forms.Button btnNav;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Panel panel4;
-        private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.PictureBox pictureBox16;
         private System.Windows.Forms.PictureBox pictureBox17;
         private System.Windows.Forms.Button button7;
@@ -519,15 +460,18 @@
         private System.Windows.Forms.Button btnAdmin;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btnNav;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Button acc_btn;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Panel panel4;
+        private System.Windows.Forms.Label label2;
         private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.Panel panel5;
-        private System.Windows.Forms.Button clearSrchBtn;
-        private System.Windows.Forms.Button searchbtn;
-        private System.Windows.Forms.ComboBox searchBills;
+        private System.Windows.Forms.Panel panel1;
     }
 }

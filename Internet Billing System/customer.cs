@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace Internet_Billing_System
 {
-    public partial class subscriptionForm : Form
+    public partial class customer : Form
     {
-        public subscriptionForm()
+        public customer()
         {
             InitializeComponent();
-        }
-
-        private void panel5_Paint(object sender, PaintEventArgs e)
-        {
-
         }
     }
 }
