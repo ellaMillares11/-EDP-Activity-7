@@ -220,9 +220,9 @@
             this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(76, 11);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(882, 73);
+            this.label1.Size = new System.Drawing.Size(693, 73);
             this.label1.TabIndex = 2;
-            this.label1.Text = "TRY - Internet Billing System";
+            this.label1.Text = "Internet Billing System";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
