@@ -142,6 +142,12 @@
     <Compile Include="billingForm.Designer.cs">
       <DependentUpon>billingForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="subscriptionForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="subscriptionForm.Designer.cs">
+      <DependentUpon>subscriptionForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="LogoutHandler.cs" />
     <Compile Include="transactionForm.cs">
       <SubType>Form</SubType>
@@ -227,6 +233,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="resetPass.resx">
       <DependentUpon>resetPass.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="subscriptionForm.resx">
+      <DependentUpon>subscriptionForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="transactionForm.resx">
       <DependentUpon>transactionForm.cs</DependentUpon>
