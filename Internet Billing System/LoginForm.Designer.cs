@@ -30,7 +30,9 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(LoginForm));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.panel3 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.createAccLink = new System.Windows.Forms.LinkLabel();
             this.forgotLNK = new System.Windows.Forms.LinkLabel();
             this.cancelbtn = new System.Windows.Forms.Button();
             this.btnLogin = new System.Windows.Forms.Button();
@@ -40,16 +42,14 @@
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.txtpassword = new System.Windows.Forms.TextBox();
             this.txtusername = new System.Windows.Forms.TextBox();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.createAccLink = new System.Windows.Forms.LinkLabel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
+            this.panel3.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -62,6 +62,17 @@
             this.panel1.Size = new System.Drawing.Size(1168, 706);
             this.panel1.TabIndex = 0;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
+            // 
+            // panel3
+            // 
+            this.panel3.Controls.Add(this.panel2);
+            this.panel3.Controls.Add(this.label1);
+            this.panel3.Controls.Add(this.pictureBox1);
+            this.panel3.Location = new System.Drawing.Point(155, 15);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(866, 634);
+            this.panel3.TabIndex = 3;
+            this.panel3.Paint += new System.Windows.Forms.PaintEventHandler(this.panel3_Paint);
             // 
             // panel2
             // 
@@ -81,6 +92,21 @@
             this.panel2.Size = new System.Drawing.Size(498, 515);
             this.panel2.TabIndex = 0;
             this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
+            // 
+            // createAccLink
+            // 
+            this.createAccLink.ActiveLinkColor = System.Drawing.Color.Turquoise;
+            this.createAccLink.AutoSize = true;
+            this.createAccLink.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.createAccLink.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.createAccLink.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(178)))), ((int)(((byte)(202)))));
+            this.createAccLink.Location = new System.Drawing.Point(133, 452);
+            this.createAccLink.Name = "createAccLink";
+            this.createAccLink.Size = new System.Drawing.Size(291, 29);
+            this.createAccLink.TabIndex = 11;
+            this.createAccLink.TabStop = true;
+            this.createAccLink.Text = "CREATE AN ACCOUNT";
+            this.createAccLink.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.createAccLink_LinkClicked);
             // 
             // forgotLNK
             // 
@@ -187,16 +213,18 @@
             this.txtusername.TabIndex = 0;
             this.txtusername.TextChanged += new System.EventHandler(this.username_TextChanged);
             // 
-            // panel3
+            // label1
             // 
-            this.panel3.Controls.Add(this.panel2);
-            this.panel3.Controls.Add(this.label1);
-            this.panel3.Controls.Add(this.pictureBox1);
-            this.panel3.Location = new System.Drawing.Point(155, 15);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(866, 634);
-            this.panel3.TabIndex = 3;
-            this.panel3.Paint += new System.Windows.Forms.PaintEventHandler(this.panel3_Paint);
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 32F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(76, 11);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(882, 73);
+            this.label1.TabIndex = 2;
+            this.label1.Text = "TRY - Internet Billing System";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // pictureBox1
             // 
@@ -211,34 +239,6 @@
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 32F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(76, 11);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(693, 73);
-            this.label1.TabIndex = 2;
-            this.label1.Text = "Internet Billing System";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.label1.Click += new System.EventHandler(this.label1_Click);
-            // 
-            // createAccLink
-            // 
-            this.createAccLink.ActiveLinkColor = System.Drawing.Color.Turquoise;
-            this.createAccLink.AutoSize = true;
-            this.createAccLink.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.createAccLink.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.createAccLink.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(178)))), ((int)(((byte)(202)))));
-            this.createAccLink.Location = new System.Drawing.Point(133, 452);
-            this.createAccLink.Name = "createAccLink";
-            this.createAccLink.Size = new System.Drawing.Size(291, 29);
-            this.createAccLink.TabIndex = 11;
-            this.createAccLink.TabStop = true;
-            this.createAccLink.Text = "CREATE AN ACCOUNT";
-            this.createAccLink.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.createAccLink_LinkClicked);
             // 
             // LoginForm
             // 
@@ -255,13 +255,13 @@
             this.Text = "IBS Log-in";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.panel1.ResumeLayout(false);
+            this.panel3.ResumeLayout(false);
+            this.panel3.PerformLayout();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            this.panel3.ResumeLayout(false);
-            this.panel3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
