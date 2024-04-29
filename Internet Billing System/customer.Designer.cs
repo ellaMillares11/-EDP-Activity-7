@@ -56,6 +56,10 @@
             this.label2 = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.clearSrchBtn = new System.Windows.Forms.Button();
+            this.searchbtn = new System.Windows.Forms.Button();
+            this.searchBills = new System.Windows.Forms.ComboBox();
+            this.panel5 = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox16)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox17)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
@@ -70,6 +74,7 @@
             this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.panel1.SuspendLayout();
+            this.panel5.SuspendLayout();
             this.SuspendLayout();
             // 
             // pictureBox16
@@ -392,11 +397,11 @@
             // 
             this.dataGridView1.BackgroundColor = System.Drawing.Color.Silver;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(313, 157);
+            this.dataGridView1.Location = new System.Drawing.Point(16, 81);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 62;
             this.dataGridView1.RowTemplate.Height = 28;
-            this.dataGridView1.Size = new System.Drawing.Size(831, 418);
+            this.dataGridView1.Size = new System.Drawing.Size(795, 250);
             this.dataGridView1.TabIndex = 10;
             // 
             // panel1
@@ -411,14 +416,59 @@
             this.panel1.Size = new System.Drawing.Size(1165, 68);
             this.panel1.TabIndex = 7;
             // 
+            // clearSrchBtn
+            // 
+            this.clearSrchBtn.BackColor = System.Drawing.Color.White;
+            this.clearSrchBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.clearSrchBtn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(178)))), ((int)(((byte)(202)))));
+            this.clearSrchBtn.Location = new System.Drawing.Point(724, 26);
+            this.clearSrchBtn.Name = "clearSrchBtn";
+            this.clearSrchBtn.Size = new System.Drawing.Size(87, 34);
+            this.clearSrchBtn.TabIndex = 16;
+            this.clearSrchBtn.Text = "Clear";
+            this.clearSrchBtn.UseVisualStyleBackColor = false;
+            // 
+            // searchbtn
+            // 
+            this.searchbtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(178)))), ((int)(((byte)(202)))));
+            this.searchbtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.searchbtn.ForeColor = System.Drawing.Color.White;
+            this.searchbtn.Location = new System.Drawing.Point(623, 26);
+            this.searchbtn.Name = "searchbtn";
+            this.searchbtn.Size = new System.Drawing.Size(95, 34);
+            this.searchbtn.TabIndex = 15;
+            this.searchbtn.Text = "Search";
+            this.searchbtn.UseVisualStyleBackColor = false;
+            // 
+            // searchBills
+            // 
+            this.searchBills.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.searchBills.FormattingEnabled = true;
+            this.searchBills.Location = new System.Drawing.Point(16, 27);
+            this.searchBills.Name = "searchBills";
+            this.searchBills.Size = new System.Drawing.Size(601, 33);
+            this.searchBills.TabIndex = 14;
+            // 
+            // panel5
+            // 
+            this.panel5.BackColor = System.Drawing.Color.White;
+            this.panel5.Controls.Add(this.clearSrchBtn);
+            this.panel5.Controls.Add(this.searchbtn);
+            this.panel5.Controls.Add(this.dataGridView1);
+            this.panel5.Controls.Add(this.searchBills);
+            this.panel5.Location = new System.Drawing.Point(313, 156);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(829, 505);
+            this.panel5.TabIndex = 17;
+            // 
             // customer
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Inherit;
             this.ClientSize = new System.Drawing.Size(1165, 692);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel4);
-            this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.panel1);
+            this.Controls.Add(this.panel5);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "customer";
@@ -440,6 +490,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            this.panel5.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -473,5 +524,9 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Button clearSrchBtn;
+        private System.Windows.Forms.Button searchbtn;
+        private System.Windows.Forms.ComboBox searchBills;
+        private System.Windows.Forms.Panel panel5;
     }
 }
